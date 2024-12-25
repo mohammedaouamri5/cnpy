@@ -1,11 +1,12 @@
+-- NOTE : You Have To Defind   `outputdir`
 project "cnpy"
 	kind "StaticLib"
 	language "C"
 	staticruntime "off"
 	warnings "off"
 
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("bin/%{prj.name}")
+	objdir ("bin-int/%{prj.name}")
 
 	files {
 	"cnpy.cpp" , "cnpy.h" ,

@@ -44,7 +44,7 @@ links {
 }
  
 group "Dependencies"
-   include "vendor/cnpy"
+   include "../path/from/lua_premake/to/cnpy" -- add the path 
 group ""
 
 ```
